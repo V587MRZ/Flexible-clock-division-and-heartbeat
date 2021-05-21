@@ -1,0 +1,15 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: D:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto aa8b102bf00f4d80a96c4ec6fe1e092f --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot TEST_clockDividerHB2_behav xil_defaultlib.TEST_clockDividerHB2 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-2861] module 'ClockDividerHB' does not have a parameter named ON_TIME [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab2/arbitrary_clock_divider/TEST_clockDividerHB2.v:15]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.ClockDividerHB(THRESHOLD=50000)
+Compiling module xil_defaultlib.TEST_clockDividerHB2
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot TEST_clockDividerHB2_behav

@@ -1,0 +1,36 @@
+
+*** Running vivado
+    with args -log overflow_clock_divider.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source overflow_clock_divider.tcl
+
+
+
+****** Vivado v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source overflow_clock_divider.tcl -notrace
+Command: synth_design -top overflow_clock_divider -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 3808
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1014.773 ; gain = 0.000
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'overflow_clock_divider' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab2/arbitrary_clock_divider/test/test.srcs/sources_1/new/overflow_clock_divider.v:23]
+	Parameter THRESHOLD bound to: 50000000 - type: integer 
+ERROR: [Synth 8-502] non-constant real-valued expression is not supported [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab2/arbitrary_clock_divider/test/test.srcs/sources_1/new/overflow_clock_divider.v:39]
+ERROR: [Synth 8-6156] failed synthesizing module 'overflow_clock_divider' [E:/class/Master of ANU/6213_Digital Systems and Microprocessors/my_6213/lab2/arbitrary_clock_divider/test/test.srcs/sources_1/new/overflow_clock_divider.v:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1014.773 ; gain = 0.000
+---------------------------------------------------------------------------------
+RTL Elaboration failed
+INFO: [Common 17-83] Releasing license: Synthesis
+7 Infos, 0 Warnings, 0 Critical Warnings and 3 Errors encountered.
+synth_design failed
+ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
+INFO: [Common 17-206] Exiting Vivado at Sun Mar 14 22:37:37 2021...
